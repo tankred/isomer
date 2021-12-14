@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <title>Isometric Canvas</title>
+  <link rel="stylesheet" href="../test/style.css">
+  <style>
+
+#art {
+  background-color:#ccc;
+}
+</style>
+
+<script>
+
+function drw() {
+  var isomr = new Isomer(document.getElementById("art"));
+  var Point = Isomer.Point;
+  var Path = Isomer.Path;
+  var Shape = Isomer.Shape;
+  var Color = Isomer.Color;
+  // isomr add Shape prism new point () Dx, Dy, Height, new color ()
+    isomr.add(Shape.Prism(new Point(1, 1), 4, 8, 0.1), new Color(0, 180, 180)); //base
+    isomr.add(Shape.Prism(new Point(5, 1), 4, 8, 0.1), new Color(0, 180, 180)); //base
+    isomr.add(Shape.Prism(new Point(1.5, 2), 7, 0.2, 0.2), new Color(10, 60, 180)); //blue
+//    isomr.add(Shape.Prism(new Point(2, 0), 1, 1, 0.5), new Color(180, 50, 60)); //red
+//    isomr.add(Shape.Prism(new Point(3, 2), 1, 1, 0.5), new Color(180, 150, 160));
+//    isomr.add(Shape.Prism(new Point(4, 3), 1, 1, 0.5), new Color(180, 150, 160));
+//    isomr.add(Shape.Prism(new Point(3, 1), 1, 1, 0.5), new Color(180, 150, 120));
+//    isomr.add(Shape.Prism(new Point(4, 2), 1, 1, 0.5), new Color(180, 150, 100));
+//    isomr.add(Shape.Prism(new Point(5, 4), 1, 1, 0.5), new Color(50, 180, 60)); //green
+//    isomr.add(Shape.Prism(new Point(5, 3), 1, 1, 0.5), new Color(180, 150, 200)); //lightpurple
+}
+</script>
+
+
+
+</head>
+
+<body>
+
+<canvas width="1200" height="800" id="art"></canvas>
+  <!-- Isomer build -->
+  <script src="../dist/isomer.js"></script>
+  <script>drw();</script>
+
+</body>
+</html>
