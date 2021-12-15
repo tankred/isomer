@@ -1,12 +1,13 @@
-![isomer](https://i.cloudup.com/kQrnH2x5XE-3000x3000.png)
+# ISOMER canvas
 
 An isometric graphics library for HTML5 canvas.
 
 View the [official project page](http://jdan.github.io/isomer/) or [try it out](http://jdan.github.io/isomer/playground).
 
-## About
+## Getting Started
 
 [Isomer](http://jdan.github.io/isomer/) is an easy-to-use graphics library for drawing isometric scenes.
+
 
 ```javascript
 var Shape = Isomer.Shape;
@@ -22,7 +23,8 @@ iso.add(Shape.Prism(Point(2, 0, 1)), blue);
 
 ![output](https://i.cloudup.com/V_jJ8lRpZV-300x300.png)
 
-## Getting Started
+### Prerequisites
+
 
 First, grab a copy of Isomer [here](https://github.com/jdan/isomer/releases/latest). Then, include the script wherever you see fit:
 
@@ -53,7 +55,7 @@ var iso = new Isomer(document.getElementById("art"));
 
 Now you're ready to start drawing!
 
-## Build
+### Build
 
 Isomer uses [Gulp](http://gulpjs.com/) as a build tool. To build the project,
 first install the dependencies.
@@ -85,7 +87,7 @@ $ npm run dist    # or, alternatively, `gulp dist`
 
 To generate `isomer.js` and `isomer.min.js` in the `dist/` directory.
 
-## Develop
+### Develop
 
 Isomer is developed using [Webpack](http://webpack.github.io/). Install
 dependencies and build the project like so:
@@ -124,7 +126,7 @@ chunk    {0} isomer.js (isomer) 20.1 kB [rendered]
 webpack: bundle is now VALID.
 ```
 
-## With node-canvas
+### With node-canvas
 
 Isomer also accepts the canvas provided by [node-canvas](https://github.com/learnboost/node-canvas),
 meaning you can generate isometric graphics on the command line.
@@ -147,3 +149,25 @@ canvas.pngStream().pipe(out);
 For more info, check out the [official project page](http://jdan.github.io/isomer).
 
 [MIT Licensed](https://github.com/jdan/isomer/blob/master/LICENSE)
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+
+## Authors
+
+Tankred
+
+## License
+
+Add link to license file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+
+
+![isomer](https://i.cloudup.com/kQrnH2x5XE-3000x3000.png)
+
+
+
