@@ -8,6 +8,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [0.4.0] - 2022-11-15
+### Changed
+- Merge AB-204
+
+## [0.3.5] - 2022-03-03
+### Changed
+- Add a pyramid
+
+## [0.3.4] - 2021-12-17
+### Changed
+- Add some random shapes
+
+## [0.3.3] - 2021-12-16
+### Changed
+- Move timber to bottom
+
 ## [0.3.2] - 2021-12-15
 ### Changed
 - Add new timber
