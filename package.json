@@ -18,17 +18,9 @@
     "3D"
   ],
   "main": "index.js",
-  "scripts": {
-    "dist": "gulp",
-    "test": "gulp test"
-  },
+  "scripts": {},
   "devDependencies": {
     "event-stream": "^4.0.1",
-    "gulp": "^4.0.2",
-    "gulp-buffer": "0.0.2",
-    "gulp-header": "^2.0.9",
-    "gulp-util": "^3.0.8",
-    "gulp-webpack": "^1.5.0",
     "jscs": "^3.0.7",
     "jscs-loader": "^0.3.0",
     "open": "8.4.0",
