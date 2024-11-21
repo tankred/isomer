@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [0.5.2] - 2024-11-21
+### Added
+- Case 010
+
 ## [0.5.1] - 2022-11-17
 ### Changed
 - npm uninstall gulp

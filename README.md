@@ -165,9 +165,6 @@ Add link to license file for details
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used
-
-
 ![isomer](https://i.cloudup.com/kQrnH2x5XE-3000x3000.png)
-
 
 
