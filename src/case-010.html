@@ -17,15 +17,17 @@
     var Path = Isomer.Path;
     var Shape = Isomer.Shape;
     var Color = Isomer.Color;
-    var blue = new Isomer.Color(50, 60, 160);
+    var purple = new Isomer.Color(50, 60, 160);
     var yellow = new Isomer.Color(250, 213, 10);
+    var blue = new Isomer.Color(15, 121, 187);
+    
     // isomr add Shape prism new point () X.Y start pos
       // Dx, Dy, Height, new color ()
       // 1 plaat = 244X122 cm
       isomr.add(Shape.Prism(new Point(5, 1), 4, 8, 0.1), yellow); //base
       isomr.add(Shape.Prism(new Point(1, 1), 3.9, 8, 0.1), new Color(0, 91, 187)); //base
-      isomr.add(Shape.Prism(new Point(1.1, 2), 8, 0.2, 5.2), new Color(0, 91, 187)); //blue FRONT balk 
-      isomr.add(Shape.Prism(new Point(1.1, 5), 8, 0.2, 5.2), new Color(0, 91, 187)); //blue
+      isomr.add(Shape.Prism(new Point(1.1, 2), 8, 0.2, 5.2), blue); //blue FRONT balk 
+      isomr.add(Shape.Prism(new Point(1.1, 5), 8, 0.2, 5.2), blue); //blue
       isomr.add(Shape.Prism(new Point(1.1, 8), 8, 0.2, 0.2), new Color(10, 60, 180)); //blue
       isomr.add(Shape.Prism(new Point(0, -0.2), 1, 8, -0.3), new Color(255, 13, 0)); //red
       // isomr.add(Shape.Prism(new Point(1.1, -1), 1, 1, 1.5), new Color(255, 213, 0)); // yellow balk
@@ -41,7 +43,7 @@
         /* (1.5, 1.5) is the center of the prism */
         .rotateZ(Point(1.5, 1.5, 0), Math.PI / 12)
         .translate(0, 0, 1.1)
-      , blue);
+      , purple);
 }
 </script>
 </head>
