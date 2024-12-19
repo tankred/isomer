@@ -28,19 +28,29 @@
     // isomr add Shape prism new point () X.Y start pos
       // Dx, Dy, Height, new color ()
       // 1 plaat = 244X122 cm
-      isomr.add(Shape.Prism(new Point(5, 1), 4, 8, 0.1), yellow); //base
       isomr.add(Shape.Prism(new Point(1, 1), 3.9, 8, 0.1), green); //base
+      isomr.add(Shape.Prism(new Point(5, 1), 4, 8, 0.1), yellow); //base
       isomr.add(Shape.Prism(new Point(1.1, 2), 8, 0.2, 5.2), blue); //blue FRONT balk 
       isomr.add(Shape.Prism(new Point(1.1, 5), 8, 0.2, 5.2), blue); //blue
-      isomr.add(Shape.Prism(new Point(1.1, 8), 8, 0.2, 0.2), bluelux); //
-      isomr.add(Shape.Prism(new Point(1, 1.2), 5, -1, -1.3), red); //
+      isomr.add(Shape.Prism(new Point(1.1, 8), 8, 0.2, 0.2), bluelux); 
+      isomr.add(Shape.Prism(new Point(1, 1.2), 5, -1, -1.3), red); 
       // isomr.add(Shape.Prism(new Point(1.1, -1), 1, 1, 1.5), new Color(255, 213, 0)); // yellow balk
       // isomr.add(Shape.Prism(new Point(1.1, -3), 1, 1, 0.5), new Color(100, 150, 160)); // grey balk
       // isomr.add(Shape.Prism(new Point(0.4, -2), 1, 1, -1.5), new Color(180, 150, 100)); // beige balk
-      isomr.add(Shape.Prism(new Point(3, 2), 3, 1, 0.5), yellow); // yellow cube 1
-      isomr.add(Shape.Prism(new Point(5, 3), 1, 1, 0.5), yellow); // 
-      isomr.add(Shape.Prism(new Point(-2, -3), 0, 0, 0.1), yellow); // 
+      isomr.add(Shape.Prism(new Point(3, 2), 3, 1, 0.5), yellow);   
+       // yellow cube 1
+      isomr.add(Shape.Prism(new Point(5, 3), 1, 1, 0.5), yellow);
+      isomr.add(Shape.Prism(new Point(-2, -3), 0, 0, 0.1), yellow); 
+    // baseplat position is based on line !
+    // var baseplate = Shape.Prism(new Point(5, 1), 4, 8, 0.1);
+    // isomr.add(baseplate, yellow);
+     //    var pyramd = Shape.Pyramid(Point.ORIGIN, 7, 1, 1);
+     //      isomr.add(pyramid
+     //	.rotateZ(Point(1.5, 1.5, 0), Math.PI / 12)
+     //	.translate(0, 0, 1.1)
+     //	, lime);
       isomr.add(Shape.Pyramid(new Point(7, 1, 1), 1, 1, 4.1), lime); // )
+
       var cube = Shape.Prism(Point.ORIGIN, 2, 2, 1);
       //isomr.add(cube, bluelux);
       isomr.add(cube
