@@ -41,16 +41,28 @@
     isomr.add(Shape.Prism(new Point(1.1, 2), 8, 0.2, 0.2), cp20); // LAT
     isomr.add(Shape.Prism(new Point(1, 1.1, 0.3), 6, 8, 0.1), cp01); // base
     isomr.add(Shape.Prism(new Point(7.1, 1.1, 0.3), 1.5, 8, 0.1), cp30); // base
-    isomr.add(Shape.Prism(new Point(5, 2, 0.2), 1, 1, 1.2), cp30); // new point X,Y, Z (cube)
     isomr.add(Shape.Prism(new Point(2.2, 5, -0.8), 1.5, 0.2, 0.5), cp10);
     isomr.add(Shape.Prism(new Point(2.2, 6, -0.8), 1.5, 0.2, 0.5), cp10);
     isomr.add(Shape.Prism(new Point(2.2, 7, -0.8), 1.5, 0.2, 0.5), cp10);
     isomr.add(Shape.Prism(new Point(2.2, 8, -0.8), 1.5, 0.2, 0.5), cp10);
     isomr.add(Shape.Prism(new Point(2.2, 9, -0.8), 1.5, 0.2, 0.5), cp10);
-    isomr.add(Shape.Prism(new Point(2.2, 10, -0.8), 1.5, 0.2, 0.5), cp10);
-    isomr.add(Shape.Pyramid(new Point(4.9, 1.9, 1.6), 1, 1, 1.1), lime); // pyramid
+    //isomr.add(Shape.Prism(new Point(2.2, 10, -0.8), 1.5, 0.2, 0.5), cp10);
+    isomr.add(Shape.Prism(new Point(6, 2, 0.2), 1, 1, 1.2), cp30); // new point X,Y,Z (cube)
+    isomr.add(Shape.Pyramid(new Point(5.9, 1.9, 1.6), 1, 1, 1.1), lime); // pyramid
+    isomr.add(Shape.Pyramid(new Point(5.9, 1.9, 3.8), 1, 1, -1.1), lime); // pyramid upside down
     isomr.add(Shape.Prism(new Point(1, 3.0, 0.9), 3, 6, 0.1), cp10); // base
-    isomr.add(Shape.Pyramid(new Point(4.9, 1.9, 3.8), 1, 1, -1.1), lime); // pyramid upside down
+    isomr.add(new Path([
+      Point(1, 1, 1),
+      Point(2, 1, 1),
+      Point(2, 2, 1),
+      Point(1, 2, 1)
+    ]), new Color(50, 160, 60));
+    isomr.add(new Path([
+      Point(2.1, 1, 1),
+      Point(3.1, 1, 1),
+      Point(3.1, 2, 1),
+      Point(2.1, 2, 1)
+    ]), new Color(50, 160, 60));
     var pyr = Shape.Pyramid(new Point(1, 4.2, 1.6), 1, 1, 1);
     isomr.add(pyr
        .rotateZ(Point(1.1, 1.2, 0), Math.PI / 12)
