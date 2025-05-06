@@ -69,6 +69,19 @@
       Point(3.1, 2, 1.2),
       Point(2.1, 2, 1.2)
     ]), new Color(50, 160, 60));
+    isomr.add(new Path([
+      Point(2.2, 1, 1.5),
+      Point(3.2, 1, 1.5),
+      Point(3.2, 2, 1.5),
+      Point(2.2, 2, 1.5)
+    ]), new Color(50, 160, 60));
+    var Z = 1.7
+    isomr.add(new Path([
+      Point(2.2, 1, Z),
+      Point(3.2, 1, Z),
+      Point(3.2, 2, Z),
+      Point(2.2, 2, Z)
+    ]), new Color(50, 160, 60));
     var pyr = Shape.Pyramid(new Point(1, 4.2, 1.6), 1, 1, 1);
     isomr.add(pyr
        .rotateZ(Point(1.1, 1.2, 0), Math.PI / 12)
