@@ -20,8 +20,8 @@
     //?  Primary color#ffc107  => pastel color ffc107 => rgb(255, 193, 7)
     //?  Text / Icons#212121  => pastel color 212121 => rgb(33, 33, 33)
     //?  Secondary text#757575  => pastel color 757575 => RGB: rgb(117, 117, 117)
-    // cp => Color Palette 01
-    //  Dark primary color #ffa000  => pastel color ffa000 =>  RGB: rgb(255, 160, 0) 
+    //? cp => Color Palette 01
+    //?   Dark primary color #ffa000  => pastel color ffa000 =>  RGB: rgb(255, 160, 0) 
     var cp01 = new Isomer.Color(255, 160, 0);
     var cp10 = new Isomer.Color(255, 236, 179);
     //  Accent color#ff4081  =>  pastel color ff4081 => RGB: rgb(255, 64, 129)
@@ -46,7 +46,7 @@
     isomr.add(Shape.Prism(new Point(2.2, 7, -0.8), 1.5, 0.2, 0.5), cp10);
     isomr.add(Shape.Prism(new Point(2.2, 8, -0.8), 1.5, 0.2, 0.5), cp10);
     isomr.add(Shape.Prism(new Point(2.2, 9, -0.8), 1.5, 0.2, 0.5), cp10);
-    //isomr.add(Shape.Prism(new Point(2.2, 10, -0.8), 1.5, 0.2, 0.5), cp10);
+    //? isomr.add(Shape.Prism(new Point(2.2, 10, -0.8), 1.5, 0.2, 0.5), cp10);
     isomr.add(Shape.Prism(new Point(6, 2, 0.2), 1, 1, 1.2), cp30); // new point X,Y,Z (cube)
     isomr.add(Shape.Pyramid(new Point(5.9, 1.9, 1.6), 1, 1, 1.1), lime); // pyramid
     isomr.add(Shape.Pyramid(new Point(5.9, 1.9, 3.8), 1, 1, -1.1), lime); // pyramid upside down
@@ -57,56 +57,28 @@
       Point(2, 2, 1),
       Point(1, 2, 1)
     ]), new Color(50, 160, 60));
-    isomr.add(new Path([
-      Point(2.1, 1, 1),
-      Point(3.1, 1, 1),
-      Point(3.1, 2, 1),
-      Point(2.1, 2, 1)
-    ]), new Color(50, 160, 60));
-    isomr.add(new Path([
-      Point(2.1, 1, 1.2),
-      Point(3.1, 1, 1.2),
-      Point(3.1, 2, 1.2),
-      Point(2.1, 2, 1.2)
-    ]), new Color(50, 160, 60));
-    isomr.add(new Path([
-      Point(2.2, 1, 1.5),
-      Point(3.2, 1, 1.5),
-      Point(3.2, 2, 1.5),
-      Point(2.2, 2, 1.5)
-    ]), new Color(50, 160, 60));
-    var Z = 1.7
-    isomr.add(new Path([
-      Point(2.2, 1, Z),
-      Point(3.2, 1, Z),
-      Point(3.2, 2, Z),
-      Point(2.2, 2, Z)
-    ]), new Color(50, 100, 60));
-    var Z = 1.9
     var a = 2.3
-    var b = a + 1
     var c = 1
     var d = c + 1
-    isomr.add(new Path([
-      Point(a, c, Z),
-      Point(b, c, Z),
-      Point(b, d, Z),
-      Point(a, d, Z)
-    ]), new Color(58, 100, 60));
-    var Z = Z + 0.2
-    var a = a + 0.1
-    isomr.add(new Path([
-      Point(a, c, Z),
-      Point(b, c, Z),
-      Point(b, d, Z),
-      Point(a, d, Z)
-    ]), new Color(52, 102, 62));
+    var colorB = 66
+    for (let i = 0; i < 18; i++) { 
+      var Z = 1.0 + i/5
+      var a = a + 0.1
+      var b = a + 1
+      var colorB = colorB + i*2;
+      isomr.add(new Path([
+        Point(a, c, Z),
+        Point(b, c, Z),
+        Point(b, d, Z),
+        Point(a, d, Z)
+      ]), new Color(52, 102, colorB));
+    }
     var pyr = Shape.Pyramid(new Point(1, 4.2, 1.6), 1, 1, 1);
     isomr.add(pyr
        .rotateZ(Point(1.1, 1.2, 0), Math.PI / 12)
        .translate(0, 0, 1.1)
        , cp01);
-//  //     var cube = Shape.Prism(Point.ORIGIN, 2, 2, 1);
+//  var cube = Shape.Prism(Point.ORIGIN, 2, 2, 1);
 //     isomr.add(cube
 //         /* (1.5, 1.5) is the center of the prism */
 //         .rotateZ(Point(1.5, 1.5, 0), Math.PI / 12)
