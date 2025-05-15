@@ -32,13 +32,17 @@
     // point () X.Y start pos // Dx, Dy, Height, new color ()
     isomr.add(Shape.Prism(new Point(1, 1), 3.9, 8, 0.1), cp30); // base
     isomr.add(Shape.Prism(new Point(5, 1), 4, 8, 0.1), cp10); // base
-    isomr.add(Shape.Prism(new Point(1.1, 8), 8, 0.2, 0.2), cp20); // LAT
-    isomr.add(Shape.Prism(new Point(1.1, 7), 8, 0.2, 0.2), cp20); // LAT
-    isomr.add(Shape.Prism(new Point(1.1, 6), 8, 0.2, 0.2), cp20); // LAT
-    isomr.add(Shape.Prism(new Point(1.1, 5), 8, 0.2, 0.2), cp20); // LAT
-    isomr.add(Shape.Prism(new Point(1.1, 4), 8, 0.2, 0.2), cp20); // LAT
-    isomr.add(Shape.Prism(new Point(1.1, 3), 8, 0.2, 0.2), cp20); // LAT
-    isomr.add(Shape.Prism(new Point(1.1, 2), 8, 0.2, 0.2), cp20); // LAT
+    for (let i = 0; i < 7;  i++) {
+      var j = i + 2;
+      isomr.add(Shape.Prism(new Point(1.1, j), 8, 0.2, 0.2), cp20); // LAT
+    }
+  //    isomr.add(Shape.Prism(new Point(1.1, 8), 8, 0.2, 0.2), cp20); // LAT
+  //    isomr.add(Shape.Prism(new Point(1.1, 7), 8, 0.2, 0.2), cp20); // LAT
+  //    isomr.add(Shape.Prism(new Point(1.1, 6), 8, 0.2, 0.2), cp20); // LAT
+  //    isomr.add(Shape.Prism(new Point(1.1, 5), 8, 0.2, 0.2), cp20); // LAT
+  //    isomr.add(Shape.Prism(new Point(1.1, 4), 8, 0.2, 0.2), cp20); // LAT
+  //    isomr.add(Shape.Prism(new Point(1.1, 3), 8, 0.2, 0.2), cp20); // LAT
+  //    isomr.add(Shape.Prism(new Point(1.1, 2), 8, 0.2, 0.2), cp20); // LAT
     isomr.add(Shape.Prism(new Point(1, 1.1, 0.3), 6, 8, 0.1), cp01); // base
     isomr.add(Shape.Prism(new Point(7.1, 1.1, 0.3), 1.5, 8, 0.1), cp30); // base
     isomr.add(Shape.Prism(new Point(2.2, 5, -0.8), 1.5, 0.2, 0.5), cp10);
