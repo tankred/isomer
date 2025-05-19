@@ -4,6 +4,10 @@ An isometric graphics library for HTML5 canvas.
 
 View the [official project page](http://jdan.github.io/isomer/) or [try it out](http://jdan.github.io/isomer/playground).
 
+## Daily drawing
+
+* [https://mastodon.social/@miccaman/114534899208669522](https://mastodon.social/@miccaman/114534899208669522)
+
 ## Getting Started
 
 [Isomer](http://jdan.github.io/isomer/) is an easy-to-use graphics library for drawing isometric scenes.
