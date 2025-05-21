@@ -7,6 +7,7 @@ View the [official project page](http://jdan.github.io/isomer/) or [try it out](
 ## Daily drawing
 
 * [https://mastodon.social/@miccaman/114534899208669522](https://mastodon.social/@miccaman/114534899208669522)
+* [https://mastodon.social/@miccaman/114545336951065882](https://mastodon.social/@miccaman/114545336951065882)
 
 ## Getting Started
 
