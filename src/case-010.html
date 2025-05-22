@@ -16,12 +16,6 @@
     var Path = Isomer.Path;
     var Shape = Isomer.Shape;
     var Color = Isomer.Color;
-    //?  Light primary color#ffecb3  => pastel color ffecb3 =>  RGB: rgb(255, 236, 179)
-    //?  Primary color#ffc107  => pastel color ffc107 => rgb(255, 193, 7)
-    //?  Text / Icons#212121  => pastel color 212121 => rgb(33, 33, 33)
-    //?  Secondary text#757575  => pastel color 757575 => RGB: rgb(117, 117, 117)
-    //? cp => Color Palette 01
-    //?   Dark primary color #ffa000  => pastel color ffa000 =>  RGB: rgb(255, 160, 0) 
     var cp01 = new Isomer.Color(255, 160, 0);
     var cp10 = new Isomer.Color(255, 236, 179);
     //  Accent color#ff4081  =>  pastel color ff4081 => RGB: rgb(255, 64, 129)
@@ -34,8 +28,11 @@
     isomr.add(Shape.Prism(new Point(5, 1), 4, 8, 0.1), cp10); // base
     for (let i = 0; i < 7;  i++) {
       var j = i + 2;
-      var colorz = 20 + (i * 1.8);
-      isomr.add(Shape.Prism(new Point(1.1, j), 8, 0.2, 0.2), new Color(90 + colorz, 15 + colorz, colorz)); // LAT
+      var k = i * 5;
+      var colorr = 50 + k;
+      var colorg = 105 + k;
+      var colorb = 20 + k;
+      isomr.add(Shape.Prism(new Point(1.1, j), 8, 0.2, 0.2), new Color(colorr, colorg, colorb)); // LAT
     }
     isomr.add(Shape.Prism(new Point(1, 1.1, 0.3), 6, 8, 0.1), cp01); // base
     isomr.add(Shape.Prism(new Point(7.1, 1.1, 0.3), 1.5, 8, 0.1), cp30); // base
