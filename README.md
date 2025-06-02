@@ -9,6 +9,8 @@ View the [official project page](http://jdan.github.io/isomer/) or [try it out](
 * [https://mastodon.social/@miccaman/114534899208669522](https://mastodon.social/@miccaman/114534899208669522)
 * [https://mastodon.social/@miccaman/114545336951065882](https://mastodon.social/@miccaman/114545336951065882)
 * [canvas 010 - Durres](https://mastodon.social/@miccaman/114552017995943913)
+* [canvas 010 - Durres](https://mastodon.social/@miccaman/114573667454244124)
+
 
 ## Getting Started
 
