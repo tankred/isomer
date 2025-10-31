@@ -18,10 +18,8 @@
     var Color = Isomer.Color;
     var cp01 = new Isomer.Color(255, 160, 0);
     var cp10 = new Isomer.Color(255, 236, 179);
-    //  Accent color#ff4081  =>  pastel color ff4081 => RGB: rgb(255, 64, 129)
-    var cp20 = new Isomer.Color(255, 64, 129);
-    //  Divider color #BDBDBD  => pastel color BDBDBD => RGB: rgb(189, 189, 189)
-    var cp30 = new Isomer.Color(189, 189, 189); 
+    var cp20 = new Isomer.Color(255, 64, 129);  //  Accent color #ff4081 
+    var cp30 = new Isomer.Color(189, 189, 189); // Divider color #BDBDBD 
     var lime = new Isomer.Color(13, 13, 96);
     // point () X.Y start pos // Dx, Dy, Height, new color ()
     isomr.add(Shape.Prism(new Point(1, 1), 3.9, 8, 0.1), cp30); // base
@@ -34,9 +32,9 @@
       var colorb = 20 + k;
       isomr.add(Shape.Prism(new Point(1.1, j), 8, 0.2, 0.2), new Color(colorr, colorg, colorb)); // LAT
     }
-    for (let i = 0; i < 7;  i++) {
-      var j = (i - 15) * -1;
-      isomr.add(Shape.Prism(new Point(6.9, j,-9.9), 3, 0.2, 0.9), cp30); // 7 LAT 
+    for (let i = 0; i < 3;  i++) {
+      var j = (i - 28) * -1.2;
+      isomr.add(Shape.Prism(new Point(26.9, j,-29.9), 0.1, 0.8, 0.5), cp20); // 7 LAT 
     }
     isomr.add(Shape.Prism(new Point(1, 1.1, 0.3), 6, 8, 0.1), cp01); // base
     isomr.add(Shape.Prism(new Point(7.1, 1.1, 0.3), 1.5, 8, 0.1), cp30); // base

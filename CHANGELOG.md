@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [0.5.47] - 2025-10-31
+### Changed
+- WIP: Case 010
+
 ## [0.5.46] - 2025-10-30
 ### Changed
 - WIP: Case 010
