@@ -1,17 +1,15 @@
 <!doctype html>
 <html>
 <head>
-  <title>Isometric Canvas</title>
-  <link rel="stylesheet" href="test/style.css">
+  <title>Isometric Canvas Cube 0</title>
+  <link rel="stylesheet" href="../test/style.css">
   <style>
-
-#art {
-  background-color:#ccc;
-}
-</style>
+    #art {
+      background-color:#ccc;
+    }
+  </style>
 
 <script>
-
 function drw() {
 var isomr = new Isomer(document.getElementById("art"));
 var Point = Isomer.Point;
@@ -19,7 +17,7 @@ var Path = Isomer.Path;
 var Shape = Isomer.Shape;
 var Color = Isomer.Color;
 // isomr add Shape prism new point () Dx, Dy, Height, new color ()
- isomr.add(Shape.Prism(new Point(1, 1), 2, 2, 4.5), new Color(0, 180, 180)); //base
+  isomr.add(Shape.Prism(new Point(1, 1), 2, 2, 4.5), new Color(0, 180, 180)); //base
   isomr.add(Shape.Prism(new Point(2, 1), 1, 1, 0.5), new Color(10, 60, 180)); //blue
   isomr.add(Shape.Prism(new Point(2, 0), 1, 1, 0.5), new Color(180, 50, 60)); //red
   isomr.add(Shape.Prism(new Point(3, 2), 1, 1, 0.5), new Color(180, 150, 160));
@@ -30,15 +28,11 @@ var Color = Isomer.Color;
   isomr.add(Shape.Prism(new Point(5, 3), 1, 1, 0.5), new Color(180, 150, 200)); //lightpurple
 }
 </script>
-
-
-
 </head>
+
 <body>
-<canvas width="1200" height="800" id="art"></canvas>
-
-  <!-- Isomer build -->
-  <script src="dist/isomer.js"></script>
+  <canvas width="1200" height="800" id="art"></canvas>
+  <script src="../dist/isomer.js"></script>
   <script>drw();</script>
-
+</body>
 </html>
