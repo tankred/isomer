@@ -1,7 +1,8 @@
+*~
+*.swp
 .gitignore~
 node_modules/
-*.*~
-*.swp
 clip.md
 dist/
 src/_*
+output/

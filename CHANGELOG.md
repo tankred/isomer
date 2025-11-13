@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.1] - 2025-11-13
+### Changed
+- WIP: CUBE 0
+
 ## [Released]
 
 ## [0.6.0] - 2025-11-04
