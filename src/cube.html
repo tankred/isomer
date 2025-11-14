@@ -17,12 +17,16 @@ var Path = Isomer.Path;
 var Shape = Isomer.Shape;
 var Color = Isomer.Color;
   var basecolor = new Isomer.Color(66, 122, 46); // green
+  var rgbR = 60
+  var rgbG = 100
+  var rgbB = 40
+  var modcolor = new Isomer.Color(rgbR, rgbG, rgbB);
 // isomr add Shape prism new point () Dx, Dy, Height, new color ()
   isomr.add(Shape.Prism(new Point(1, 1), 2, 2, 4.5), new Color(0, 180, 180)); //base
   isomr.add(Shape.Prism(new Point(2, 1), 1, 1, 0.5), new Color(10, 60, 180)); //blue
   isomr.add(Shape.Prism(new Point(2, 0), 1, 1, 0.5), new Color(180, 50, 60)); //red
   isomr.add(Shape.Prism(new Point(3, 2), 1, 1, 0.5), basecolor);
-  isomr.add(Shape.Prism(new Point(4, 3), 1, 1, 0.5), new Color(180, 150, 160));
+  isomr.add(Shape.Prism(new Point(4, 3), 1, 1, 0.5), modcolor);
   isomr.add(Shape.Prism(new Point(3, 1), 1, 1, 0.5), new Color(180, 150, 120));
   isomr.add(Shape.Prism(new Point(4, 2), 1, 1, 0.5), new Color(180, 150, 100));
   isomr.add(Shape.Prism(new Point(5, 4), 1, 1, 0.5), new Color(50, 180, 60)); //green
