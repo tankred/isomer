@@ -18,14 +18,5 @@
     "3D"
   ],
   "main": "index.js",
-  "scripts": {},
-  "devDependencies": {
-    "event-stream": "^4.0.1",
-    "jscs": "^3.0.7",
-    "jscs-loader": "^0.3.0",
-    "open": "8.4.0",
-    "strftime": "^0.10.1",
-    "webpack": "^5.75.0",
-    "webpack-dev-server": "^4.11.1"
-  }
+  "scripts": {}
 }
