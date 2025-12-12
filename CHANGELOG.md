@@ -6,6 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.3] - 2025-12-12
+### Changed
+- CUBE 0
+### Added
+- 4 pyramids
+
+## [0.6.2] - 2025-11-14
+### Changed
+- WIP: CUBE 0
+
+## [0.6.1] - 2025-11-13
+### Changed
+- WIP: CUBE 0
+
 ## [Released]
 
 ## [0.6.0] - 2025-11-04

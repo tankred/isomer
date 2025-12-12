@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <title>Isometric Piramid 10</title>
+  <link rel="stylesheet" href="../test/style.css">
+  <style>
+    #art {
+      background-color:#f6f6e0;
+    }
+  </style>
+
+<script>
+function drw() {
+var iso = new Isomer(document.getElementById("art"));
+var Point = Isomer.Point;
+var Path = Isomer.Path;
+var Shape = Isomer.Shape;
+var Color = Isomer.Color;
+  var basecolor = new Isomer.Color(66, 122, 46); // green
+  var rgbR = 60
+  var rgbG = 100
+  var rgbB = 40
+  var modcolor = new Isomer.Color(rgbR, rgbG, rgbB);
+  // Shape prism new point () Dx, Dy, Height, new color ()
+
+// Point.ORIGIN = new Point(0, 0, 0)
+
+iso.add([
+//  Shape.Prism(Point.ORIGIN, 3, 3, 1),
+  Shape.Prism(new Point(0, 0, 0.9), 3, 3, 0.1),
+
+  Shape.Pyramid(new Point(0, 0, 1)),
+  Shape.Pyramid(new Point(0, 2, 1)),
+  Shape.Pyramid(new Point(2, 0, 1)),
+  Shape.Pyramid(new Point(2, 2, 1))
+]);
+  }
+</script>
+</head>
+
+<body>
+  <canvas width="1200" height="800" id="art"></canvas>
+  <script src="../dist/isomer.js"></script>
+  <script>drw();</script>
+</body>
+</html>
